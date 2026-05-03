@@ -1,0 +1,67 @@
+{
+  "theme": "light",
+  "archetype": "5 (Jewel & Luxury) adapted for Light Theme",
+  "typography": {
+    "heading_font": "Cormorant Garamond",
+    "body_font": "Outfit",
+    "hierarchy": {
+      "h1": "text-5xl md:text-6xl+ font-light tracking-tight",
+      "h2": "text-4xl md:text-5xl font-light tracking-tight",
+      "h3": "text-2xl md:text-3xl font-light",
+      "body": "text-base leading-relaxed",
+      "overline": "text-xs font-semibold tracking-[0.2em] uppercase text-emerald-800"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#FDFBF7",
+      "secondary": "#F4F1EA",
+      "overlay": "rgba(6, 78, 59, 0.85)"
+    },
+    "text": {
+      "primary": "#1C1C1C",
+      "secondary": "#4A4A4A",
+      "inverse": "#FDFBF7"
+    },
+    "brand": {
+      "emerald": "#064E3B",
+      "gold": "#C5A059",
+      "champagne": "#F0E6D2"
+    }
+  },
+  "layout": {
+    "spacing_system": "Generous spacing. Use p-8, py-24, gap-12 to ensure breathing room.",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "grid_strategy": "Bento Grid Mode A (Tetris Grid) for Gallery and Services. Asymmetric column spans."
+  },
+  "components": {
+    "hero": "Full-bleed image or smooth crossfade slider. Hero overlay: bg-black/30 or gradient-to-t from-emerald-900/60. Text left-aligned with a metallic accent line.",
+    "buttons": "Primary: bg-emerald-900 text-white rounded-none hover:bg-emerald-800 transition-colors. Secondary: border border-emerald-900 text-emerald-900 rounded-none hover:bg-emerald-50 transition-colors.",
+    "cards": "Cardless or flat background (bg-white) with 1px border-emerald-900/10. No heavy shadows. Subtle lift on hover.",
+    "whatsapp_float": "Sticky bottom-right. Glassmorphism pill shape. backdrop-blur-xl bg-white/80 border border-white/20 shadow-lg text-emerald-900. Contains WhatsApp and Phone icons."
+  },
+  "motion": {
+    "scroll": "Smooth scroll using Lenis.",
+    "entrance": "Fade up with Framer Motion (y: 20, opacity: 0 -> 1, duration: 0.6).",
+    "hover": "Images subtly scale up (scale: 1.05) within hidden overflow containers."
+  },
+  "media_urls": {
+    "hero": "https://images.pexels.com/photos/34079355/pexels-photo-34079355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "services_decor": "https://images.pexels.com/photos/33417236/pexels-photo-33417236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "services_venue": "https://images.pexels.com/photos/14399476/pexels-photo-14399476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "services_catering": "https://images.unsplash.com/photo-1738202321539-9ed4a727f735?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwxfHxmaW5lJTIwZGluaW5nJTIwY2F0ZXJpbmclMjBJbmRpYW4lMjBmb29kJTIwYnVmZmV0fGVufDB8fHx8MTc3NzI4NDUxNnww&ixlib=rb-4.1.0&q=85",
+    "gallery": [
+      "https://images.unsplash.com/photo-1708606811579-23b18fc48007?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBJbmRpYW4lMjB3ZWRkaW5nJTIwbWFuZGFwJTIwZGVjb3J8ZW58MHx8fHwxNzc3Mjg0NTE2fDA&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1634253539596-5f1627064d68?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NzR8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBmYXJtaG91c2UlMjB2ZW51ZSUyMGV4dGVyaW9yJTIwbmF0dXJlfGVufDB8fHx8MTc3NzI4NDUxNnww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1581546085212-f25477a9d4fb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHxmaW5lJTIwZGluaW5nJTIwY2F0ZXJpbmclMjBJbmRpYW4lMjBmb29kJTIwYnVmZmV0fGVufDB8fHx8MTc3NzI4NDUxNnww&ixlib=rb-4.1.0&q=85",
+      "https://images.unsplash.com/photo-1557693116-fb9cff08f972?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzd8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBJbmRpYW4lMjB3ZWRkaW5nJTIwbWFuZGFwJTIwZGVjb3J8ZW58MHx8fHwxNzc3Mjg0NTE2fDA&ixlib=rb-4.1.0&q=85"
+    ]
+  },
+  "specific_instructions": [
+    "Address: A-21, Block A, Sector 52, Noida",
+    "Target Locations: Noida, Greater Noida, Ghaziabad, Delhi, Gurgaon",
+    "Use Lucide icons for UI elements and ensure the WhatsApp button is prominently accessible at all times.",
+    "Form must submit to WhatsApp using a wa.me/ link with pre-filled text.",
+    "Add 'data-testid' to all interactive elements."
+  ]
+}

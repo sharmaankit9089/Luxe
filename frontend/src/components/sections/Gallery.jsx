@@ -64,7 +64,6 @@ export const Gallery = () => {
         </div>
       </div>
 
-      {/* Lightbox Modal */}
       {activeImg && (
         <div 
           className="fixed inset-0 z-[60] bg-black/95 flex items-center justify-center p-6 md:p-12"

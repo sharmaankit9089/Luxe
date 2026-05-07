@@ -35,7 +35,7 @@ export const Gallery = () => {
             </h2>
           </div>
           <p className="md:max-w-xs text-sm text-[var(--ink-soft)] leading-relaxed">
-            Handpicked moments from weddings and corporate soirées hosted at our farmhouse and beyond.
+            Handpicked moments from weddings and corporate soirees hosted at our farmhouse and beyond.
           </p>
         </div>
 

@@ -23,22 +23,22 @@ export const BUSINESS = {
 export const IMAGES = {
   hero: "https://images.pexels.com/photos/34079355/pexels-photo-34079355.jpeg?auto=compress&cs=tinysrgb&w=1600&q=70",
   servicesDecor:
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/9mol7bai_WhatsApp%20Image%202026-04-27%20at%2010.30.52%20PM%20%283%29.jpeg",
+    "https://images.pexels.com/photos/33417236/pexels-photo-33417236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   servicesVenue:
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/aj4okzdy_WhatsApp%20Image%202026-04-27%20at%2010.30.52%20PM%20%285%29.jpeg",
+    "https://images.pexels.com/photos/14399476/pexels-photo-14399476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   servicesCatering:
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/i35qw0p2_WhatsApp%20Image%202026-04-27%20at%2010.30.55%20PM%20%282%29.jpeg",
+    "https://images.unsplash.com/photo-1738202321539-9ed4a727f735?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwxfHxmaW5lJTIwZGluaW5nJTIwY2F0ZXJpbmclMjBJbmRpYW4lMjBmb29kJTIwYnVmZmV0fGVufDB8fHx8MTc3NzI4NDUxNnww&ixlib=rb-4.1.0&q=85",
   gallery: [
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/kaj2nxz7_WhatsApp%20Image%202026-04-27%20at%2010.30.55%20PM%20%284%29.jpeg",
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/hmn65xfu_WhatsApp%20Image%202026-04-27%20at%2010.30.53%20PM%20%281%29.jpeg",
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/3my5pjcs_WhatsApp%20Image%202026-04-27%20at%2010.30.53%20PM.jpeg",
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/9bgiksov_WhatsApp%20Image%202026-04-27%20at%2010.30.54%20PM%20%282%29.jpeg",
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/1zakccwh_WhatsApp%20Image%202026-04-27%20at%2010.30.54%20PM%20%285%29.jpeg",
+    "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=compress&cs=tinysrgb&w=800&q=80",
+    "https://images.unsplash.com/photo-1708606811579-23b18fc48007?auto=compress&cs=tinysrgb&w=800&q=80",
+    "https://images.unsplash.com/photo-1634253539596-5f1627064d68?auto=compress&cs=tinysrgb&w=800&q=80",
+    "https://images.unsplash.com/photo-1581546085212-f25477a9d4fb?auto=compress&cs=tinysrgb&w=800&q=80",
+    "https://images.unsplash.com/photo-1557693116-fb9cff08f972?auto=compress&cs=tinysrgb&w=800&q=80",
   ],
   corporate:
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/36c8lrqj_WhatsApp%20Image%202026-04-27%20at%2010.30.54%20PM.jpeg",
+    "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=compress&cs=tinysrgb&w=800&q=80",
   wedding:
-    "https://customer-assets.emergentagent.com/job_farm-cater-plan/artifacts/r3wgl051_WhatsApp%20Image%202026-04-27%20at%2010.30.52%20PM%20%286%29.jpeg",
+    "https://images.unsplash.com/photo-1519741497674-611481863552?auto=compress&cs=tinysrgb&w=800&q=80",
 };
 
 export const VIDEOS = [

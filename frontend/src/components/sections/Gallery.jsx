@@ -57,7 +57,7 @@ export const Gallery = () => {
                 alt={ALTS[item.i]}
                 loading="lazy"
                 decoding="async"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1.2s]"
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-[1200ms]"
               />
             </div>
           ))}

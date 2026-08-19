@@ -56,6 +56,11 @@ export const Footer = () => {
             {BUSINESS.areas.map((a) => (
               <li key={a}><a href="/form">Best Caterer in {a}</a></li>
             ))}
+            <li>
+              <Link to="/locations" className="text-[var(--gold)] hover:underline font-medium mt-2 inline-block">
+                View All Locations & Services →
+              </Link>
+            </li>
           </ul>
         </div>
 

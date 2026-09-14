@@ -12,6 +12,7 @@ export const Contact = () => {
     eventType: "",
     message: "",
   });
+  const [activeLocation, setActiveLocation] = useState(0);
 
   const change = (k) => (e) => setForm({ ...form, [k]: e.target.value });
 
@@ -65,10 +66,20 @@ export const Contact = () => {
               <div className="w-11 h-11 rounded-full border border-[var(--gold)]/40 flex items-center justify-center shrink-0">
                 <MapPin size={16} className="text-[var(--emerald)]" />
               </div>
-              <div>
-                <p className="text-xs uppercase tracking-[0.18em] text-[var(--ink-soft)]">Visit</p>
-                <p className="mt-1 text-[var(--ink)]">{BUSINESS.addresses[0]}</p>
-                <p className="text-[var(--ink-soft)] text-sm mt-0.5">{BUSINESS.addresses[1]}</p>
+              <div className="flex-1">
+                <p className="text-xs uppercase tracking-[0.18em] text-[var(--ink-soft)] mb-2">Our Locations</p>
+                <div className="space-y-3">
+                  {BUSINESS.locations.map((loc, idx) => (
+                    <div 
+                      key={idx}
+                      onClick={() => setActiveLocation(idx)}
+                      className={`cursor-pointer transition-all border-l-2 pl-3 py-1 ${activeLocation === idx ? 'border-[var(--emerald)]' : 'border-transparent hover:border-[var(--gold)]/40'}`}
+                    >
+                      <p className={`text-sm font-medium ${activeLocation === idx ? 'text-[var(--emerald)]' : 'text-[var(--ink)]'}`}>{loc.name}</p>
+                      <p className="text-[var(--ink-soft)] text-xs mt-0.5 leading-relaxed">{loc.address}</p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
             <div className="flex gap-4">
@@ -110,9 +121,10 @@ export const Contact = () => {
 
           <div className="mt-10 relative aspect-[16/9] overflow-hidden border border-emerald-900/10">
             <iframe
+              key={activeLocation}
               data-testid="contact-map"
-              title="Luxe Caterer & Planners Location"
-              src={BUSINESS.mapsEmbed}
+              title={`${BUSINESS.locations[activeLocation].name} Location`}
+              src={BUSINESS.locations[activeLocation].mapEmbed}
               loading="lazy"
               className="w-full h-full"
               referrerPolicy="no-referrer-when-downgrade"

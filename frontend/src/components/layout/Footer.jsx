@@ -17,6 +17,42 @@ export const Footer = () => {
           <p className="mt-4 text-sm leading-relaxed text-[var(--ivory)]/70 max-w-xs">
             Luxe Farms · Caterer · Planner. One-stop luxury farmhouse, catering & decor for weddings and corporate events across Delhi NCR.
           </p>
+          <ul className="mt-6 space-y-3 text-sm text-[var(--ivory)]/80">
+            <li className="flex gap-3">
+              <Phone size={16} className="mt-0.5 text-[var(--gold)] shrink-0" />
+              <div className="flex flex-col">
+                {BUSINESS.phones.map((p) => (
+                  <a key={p} href={`tel:${p.replace(/\s|\+/g, "")}`} className="hover:text-[var(--gold)] transition-colors">
+                    {p}
+                  </a>
+                ))}
+              </div>
+            </li>
+            <li className="flex gap-3">
+              <Mail size={16} className="mt-0.5 text-[var(--gold)] shrink-0" />
+              <a href={`mailto:${BUSINESS.email}`} className="hover:text-[var(--gold)] transition-colors">{BUSINESS.email}</a>
+            </li>
+          </ul>
+
+          <div className="flex gap-3 mt-5">
+            <a
+              href={waLink()}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="footer-whatsapp-btn"
+              className="px-4 py-2 bg-[#25D366] text-white text-xs font-medium hover:opacity-90 transition-opacity"
+            >
+              WhatsApp
+            </a>
+            <a
+              href={telLink}
+              data-testid="footer-call-btn"
+              className="px-4 py-2 border border-[var(--gold)] text-[var(--gold)] text-xs font-medium hover:bg-[var(--gold)] hover:text-[var(--emerald-deep)] transition-colors"
+            >
+              Call Now
+            </a>
+          </div>
+
           <div className="flex items-center gap-3 mt-6">
             <a
               href={BUSINESS.social.instagram}
@@ -65,45 +101,28 @@ export const Footer = () => {
         </div>
 
         <div>
-          <h4 className="overline !text-[var(--gold)]">Contact</h4>
+          <h4 className="overline !text-[var(--gold)]">Our Locations</h4>
           <ul className="mt-5 space-y-4 text-sm text-[var(--ivory)]/80">
             <li className="flex gap-3">
-              <MapPin size={16} className="mt-0.5 text-[var(--gold)] shrink-0" />
-              <span>{BUSINESS.addresses[0]}</span>
-            </li>
-            <li className="flex gap-3">
-              <Phone size={16} className="mt-0.5 text-[var(--gold)] shrink-0" />
-              <div className="flex flex-col">
-                {BUSINESS.phones.map((p) => (
-                  <a key={p} href={`tel:${p.replace(/\s|\+/g, "")}`} className="hover:text-[var(--gold)]">
-                    {p}
-                  </a>
+              <MapPin size={16} className="mt-1 text-[var(--gold)] shrink-0" />
+              <div className="flex flex-col gap-3">
+                {BUSINESS.locations.map((loc, idx) => (
+                  <div key={idx}>
+                    <span className="block font-medium text-[var(--gold)]">{loc.name}</span>
+                    <span className="block mb-1">{loc.address}</span>
+                    <a
+                      href={loc.mapEmbed.replace("&output=embed", "")}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[11px] uppercase tracking-wider text-[var(--gold)] hover:text-white transition-colors inline-flex items-center gap-1 opacity-90 mt-0.5"
+                    >
+                      View on Map &rarr;
+                    </a>
+                  </div>
                 ))}
               </div>
             </li>
-            <li className="flex gap-3">
-              <Mail size={16} className="mt-0.5 text-[var(--gold)] shrink-0" />
-              <a href={`mailto:${BUSINESS.email}`} className="hover:text-[var(--gold)]">{BUSINESS.email}</a>
-            </li>
           </ul>
-          <div className="flex gap-2 mt-6">
-            <a
-              href={waLink()}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="footer-whatsapp-btn"
-              className="px-4 py-2 bg-[#25D366] text-white text-xs font-medium hover:opacity-90"
-            >
-              WhatsApp
-            </a>
-            <a
-              href={telLink}
-              data-testid="footer-call-btn"
-              className="px-4 py-2 border border-[var(--gold)] text-[var(--gold)] text-xs font-medium hover:bg-[var(--gold)] hover:text-[var(--emerald-deep)]"
-            >
-              Call Now
-            </a>
-          </div>
         </div>
       </div>
 

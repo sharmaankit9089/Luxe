@@ -5,14 +5,23 @@ export const BUSINESS = {
   whatsapp: "919560135069",
   primaryPhone: "+919560135069",
   email: "Info@theluxevents.com",
-  addresses: [
-    "A-21, Block A, Sector 52, Noida, Uttar Pradesh 201307",
-    "Tower 10B, 10th Floor, DLF Cybercity, Gurgaon 122002",
+  locations: [
+    {
+      name: "Luxe Caterers & Event Planner",
+      address: "A-21, Noida sector 52, Noida, Uttar Pradesh 201301",
+      mapEmbed: "https://maps.google.com/maps?q=A-21,+Noida+sector+52,+Noida,+Uttar+Pradesh+201301&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    },
+    {
+      name: "Luxe Event Planners",
+      address: "C/12, Sector 1, Noida Extension, Bisrakh Jalalpur, Greater Noida, Uttar Pradesh 201318",
+      mapEmbed: "https://maps.google.com/maps?q=28.561861,77.450302&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    },
+    {
+      name: "Luxe Farms",
+      address: "Farm 1&2, Phase 1A, Green Beauty Farm, Near Old Club, Sector 135, Noida, Uttar Pradesh 201304",
+      mapEmbed: "https://maps.google.com/maps?q=28.4833624,77.3852649&t=&z=15&ie=UTF8&iwloc=&output=embed"
+    }
   ],
-  mapsEmbed:
-    "https://maps.google.com/maps?q=A-21+Block+A+Sector+52+Noida+Uttar+Pradesh+201307&t=&z=15&ie=UTF8&iwloc=&output=embed",
-  mapsLink:
-    "https://www.google.com/maps/search/?api=1&query=A-21+Block+A+Sector+52+Noida+Uttar+Pradesh+201307",
   social: {
     facebook: "https://www.facebook.com/people/Luxe-Event-Planners/100094581399960/",
     instagram: "https://www.instagram.com/luxeventplanners/",

@@ -50,7 +50,7 @@ export const Hero = () => {
             <a
               href="#form"
               data-testid="hero-book-btn"
-              className="scroll-mt-24 group inline-flex items-center gap-3 px-7 py-4 bg-[var(--gold)] text-[var(--emerald-deep)] text-sm font-semibold tracking-wide hover:bg-[var(--ivory)] transition-colors"
+              className="group inline-flex items-center gap-3 px-7 py-4 bg-[var(--gold)] text-[var(--emerald-deep)] text-sm font-semibold tracking-wide hover:bg-[var(--ivory)] transition-colors"
             >
               Book Your Date
               <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
@@ -70,7 +70,7 @@ export const Hero = () => {
             {[
               ["500+", "Events Crafted"],
               ["15 Acres", "Luxe Farms · Noida"],
-              ["5★", "Google Reviews"],
+              ["4.7★", "Google Reviews"],
             ].map(([n, l]) => (
               <div key={l} className="flex flex-col">
                 <span className="font-display text-3xl md:text-4xl text-[var(--gold-soft)]">{n}</span>

@@ -84,7 +84,7 @@ export default function CateringForm() {
             className="relative bg-[var(--ivory-soft)] p-8 md:p-10 border border-emerald-900/10"
           >
             <div className="absolute -top-3 left-8 bg-[var(--gold)] text-[var(--emerald-deep)] text-[10px] font-semibold tracking-[0.2em] uppercase px-3 py-1.5">
-              Enquiry · Free Consultation
+              Enquiry · EMI · Free Consultation
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-2">

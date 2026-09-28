@@ -42,9 +42,10 @@ export const Header = () => {
   }, [lastScrollY]);
 
   return (
-    <header
-      data-testid="site-header"
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 transform ${
+    <>
+      <header
+        data-testid="site-header"
+        className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 transform ${
         show ? "translate-y-0" : "-translate-y-full"
       } ${
         scrolled
@@ -52,6 +53,15 @@ export const Header = () => {
           : "bg-transparent"
       }`}
     >
+      {/* EMI Announcement Bar */}
+      <div className={`w-full py-2 flex items-center justify-center border-b transition-colors duration-500 ${
+        scrolled ? "border-emerald-900/10 text-[var(--ink)]" : "border-white/20 text-white"
+      }`}>
+        <p className="text-[10px] md:text-xs tracking-[0.2em] uppercase font-semibold opacity-90">
+          Easy EMI options available on all bookings
+        </p>
+      </div>
+
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-4 md:py-5 flex items-center justify-between">
 
         {/* Logo */}
@@ -157,6 +167,7 @@ export const Header = () => {
           </div>
         </div>
       )}
+      </header>
       {/* Mobile Sticky CTA */}
       <div 
         className={`lg:hidden fixed bottom-6 left-6 right-6 z-50 transition-all duration-500 transform ${
@@ -170,6 +181,6 @@ export const Header = () => {
           Book Your Date
         </a>
       </div>
-    </header>
+    </>
   );
 };

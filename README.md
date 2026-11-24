@@ -1,5 +1,5 @@
 # Luxe
-
+.
 This repository contains:
 
 - `frontend/`: the React application deployed to Vercel

@@ -1,9 +1,9 @@
 export const BUSINESS = {
   name: "Luxe Caterer & Planners",
   tagline: "Luxe Farms · Catering · Planning",
-  phones: ["+91 95601 35069", "+91 83838 03539", "+91 99111 16133"],
-  whatsapp: "919560135069",
-  primaryPhone: "+919560135069",
+  phones: ["+91 96500 83159", "+91 95601 35069", "+91 83838 03539", "+91 99111 16133"],
+  whatsapp: "919650083159",
+  primaryPhone: "+919650083159",
   email: "Info@theluxevents.com",
   locations: [
     {

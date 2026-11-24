@@ -9,6 +9,15 @@
             gtag('js', new Date());
         </script>
         <!-- End Google Tag Manager -->
+        <!-- AiSensy Website Tracking -->
+        <script>
+            window.AisensyConfig = { baseUrl: 'https://backend.aisensy.com' };
+            !function(a,i,s,e){a.Aisensy=a.Aisensy||{q:[],init:function(){this.q.push(['init'].concat([].slice.call(arguments)))},track:function(){this.q.push(['track'].concat([].slice.call(arguments)))}};
+            var d=i.createElement(s);d.async=1;d.src=e;var f=i.getElementsByTagName(s)[0];f.parentNode.insertBefore(d,f);
+            }(window,document,'script','https://d1fviw7lxswn81.cloudfront.net/system/aisensy.min.js');
+            Aisensy.init('SIG-M2LtCPSrfL');
+        </script>
+        <!-- End AiSensy Website Tracking -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
